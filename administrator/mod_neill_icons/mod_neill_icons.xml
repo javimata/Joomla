@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" client="administrator" method="upgrade">
+	<name>Neill Icons</name>
+	<author>Javi Mata</author>
+	<creationDate>November 2016</creationDate>
+	<copyright>Copyright (C) 2010 - 2016 JoomShaper. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>javimata@gmail.com</authorEmail>
+	<authorUrl>www.javimata.com</authorUrl>
+	<version>1.0.0</version>
+	<description>Add icons Neill School</description>
+	<files>
+		<filename module="mod_neill_icons">mod_neill_icons.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="Layout" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
