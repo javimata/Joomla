@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="attribs">
+		<fieldset name="addfield" label="Images in lists">
+			<field
+				name="imagen1"
+				type="media"
+				directory="/"
+				preview="true"
+				label="Image intro"
+			/>
+			<field
+				name="imagen2"
+				type="media"
+				directory="/"
+				preview="true"
+				label="Image intro hover"
+			/>
+		</fieldset>
+	</fields>
+</form>

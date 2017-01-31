@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="attribs">
+		<fieldset name="addfieldx" label="&lt;i class='fa fa-star'/&gt;&lt;/i/&gt; Datos del Paquete">
+
+			<field name="imagen1" type="media" directory="/" preview="true" label="Imagen Banner" />
+
+			<field name="intro" type="textarea" label="Texto introducción" />
+
+			<field name="lugar" type="text" label="Lugar / Destino" />
+			<field name="fecha" type="text" label="Fecha" />
+
+			<field name="txt_btn" type="text" default="VER DETALLES" label="Texto Botón" />
+
+		</fieldset>
+	</fields>
+</form>

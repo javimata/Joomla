@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" position="status" method="upgrade">
+	<name>Iconos Redes sociales</name>
+	<author>@Javi_Mata</author>
+	<creationDate>Febrary 2016</creationDate>
+	<copyright>Copyright (C) 2016 - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>javimata@gmail.com</authorEmail>
+	<authorUrl>www.javimata.com</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[Iconos Redes sociales con Fontawesome]]></description>
+
+	<files>
+		<filename module="mod_socicons">mod_socicons.php</filename>
+		<filename module="mod_socicons">css/style.css</filename>
+		<filename module="mod_socicons">helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field name="agrega_fontawesome" class="btn-group btn-group-yesno" buttons="true" type="radio" default="0" label="Agrega CSS de Font Awesome" description="Agrega el CSS de Font Awesome, solo es necesario si no se ha agregado antes">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="url_fontawesome" type="text" default="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" label="Url Font Awesome" />
+
+				<field name="agrega_css" class="btn-group btn-group-yesno" buttons="true" type="radio" default="0" label="Agregar CSS del modulo">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="agrega_nombre" class="btn-group btn-group-yesno" buttons="true" type="radio" default="0" label="Agregar Nombre">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="color_base" type="color" default="#666666" label="Color de icono" description="Color base del icono" />
+
+				<field name="colorear" class="btn-group btn-group-yesno" buttons="true" type="radio" default="0" label="Colorear icono">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+					<option value="2">En Hover</option>
+				</field>
+
+				<field name="agrega_fondo" class="btn-group btn-group-yesno" buttons="true" type="radio" default="0" label="Agregar fondo">
+					<option value="0">JNO</option>
+					<option value="1">Circulo</option>
+					<option value="2">Cuadrado</option>
+				</field>
+
+				<field name="color_fondo" type="color" default="#ffffff" label="Color de fondo" description="Color base del fondo del icono" />
+
+				<field name="nota" type="note" class="alert alert-info" label="No es necesario agregar fa fa- para agregar un icono solamente se debe ingresar el nombre del mismo, ejemplo: facebook" />
+
+				<field name="iconos" type="repeatable" icon="list" description="Iconos de redes sociales" label="Iconos">
+					<fieldset hidden="true" name="list_templates_modal" repeat="true">
+						<field name="nombre" label="Nombre" type="text" />
+						<field name="url" label="Url" type="text" />
+						<field name="icono" label="Icono" type="text" />
+						<field name="clase" label="Clase CSS" type="text" />
+
+						<field name="target" type="list" default="0" label="Abrir en:">
+							<option value="1">Nueva ventana</option>
+							<option value="0">Misma ventana</option>
+						</field>
+
+					</fieldset>
+				</field>
+
+			</fieldset>
+
+
+			<fieldset name="advanced">
+
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field name="moduleclass_sfx" type="text" default=""
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+			</fieldset>
+
+		</fields>
+
+
+	</config>
+</extension>

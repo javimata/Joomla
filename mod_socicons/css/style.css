@@ -1,0 +1,80 @@
+.sp-module.socicons {
+	margin-top: 0;
+}
+
+.list-icons-socicons ul {
+	margin: 0; 
+	padding: 0;
+	list-style: none;
+}
+
+.list-icons-socicons li {
+	margin: 0;
+	padding: 3px;
+	float: left;
+}
+
+.list-icons-socicons li a i{
+	font-size: 18px;
+}
+
+/*
+.list-icons-socicons li i { color:#adadad; }
+*/
+
+.list-icons-socicons li a.colored i.fa-facebook   { color:#3b5998; }
+.list-icons-socicons li a.colored i.fa-twitter    { color:#00aced; }
+.list-icons-socicons li a.colored i.fa-youtube    { color:#bb0000; }
+.list-icons-socicons li a.colored i.fa-googleplus { color:#dd4b39; }
+.list-icons-socicons li a.colored i.fa-instagram  { color:#125688; }
+.list-icons-socicons li a.colored i.fa-linkedin   { color:#007bb5; }
+.list-icons-socicons li a.colored i.fa-pinterest  { color:#cb2027; }
+.list-icons-socicons li a.colored i.fa-foursquare { color:#0072b1; }
+
+.list-icons-socicons li a.colored-hover i {
+	-webkit-transition: all .5s ease 0s;
+	-moz-transition: all .5s ease 0s;
+	-ms-transition: all .5s ease 0s;
+	transition: all .5s ease 0s;
+}
+
+.list-icons-socicons li a.colored-hover i.fa-facebook:hover   { color:#3b5998; }
+.list-icons-socicons li a.colored-hover i.fa-twitter:hover    { color:#00aced; }
+.list-icons-socicons li a.colored-hover i.fa-youtube:hover    { color:#bb0000; }
+.list-icons-socicons li a.colored-hover i.fa-googleplus:hover { color:#dd4b39; }
+.list-icons-socicons li a.colored-hover i.fa-instagram:hover  { color:#125688; }
+.list-icons-socicons li a.colored-hover i.fa-linkedin:hover   { color:#007bb5; }
+.list-icons-socicons li a.colored-hover i.fa-pinterest:hover  { color:#cb2027; }
+.list-icons-socicons li a.colored-hover i.fa-foursquare:hover { color:#0072b1; }
+
+.list-icons-socicons li span.con-fondo:hover i {
+	-webkit-transition: all .6s ease 0s;
+	-moz-transition: all .6s ease 0s;
+	-ms-transition: all .6s ease 0s;
+	transition: all .6s ease 0s;
+}
+
+.list-icons-socicons li span.con-fondo:hover i.fondo-facebook   { color:#3b5998; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-twitter    { color:#00aced; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-youtube    { color:#bb0000; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-googleplus { color:#dd4b39; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-instagram  { color:#125688; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-linkedin   { color:#007bb5; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-pinterest  { color:#cb2027; }
+.list-icons-socicons li span.con-fondo:hover i.fondo-foursquare { color:#0072b1; }
+
+.list-icons-socicons li span.con-fondo:hover i.icon-con-fondo { color:#fff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

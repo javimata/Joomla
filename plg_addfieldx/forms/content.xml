@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="attribs">
+		<fieldset name="addfieldx" label="Add Fields">
+			<field
+				name="image1"
+				type="media"
+				directory="procedures"
+				preview="true"
+				label="Imagen 1"
+			/>
+			<field
+				name="image2"
+				type="media"
+				directory="procedures"
+				preview="true"
+				label="Imagen 2"
+			/>
+		</fieldset>
+	</fields>
+</form>

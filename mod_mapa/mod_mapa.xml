@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" position="status" method="upgrade">
+	<name>Google Map</name>
+	<author>@Javi_Mata</author>
+	<creationDate>December 2014</creationDate>
+	<copyright>Copyright (C) 2014 - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>javimata@gmail.com</authorEmail>
+	<authorUrl>www.javimata.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[Muestra un Google Map]]></description>
+	<files>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<filename module="mod_mapa">mod_mapa.php</filename>
+		<filename module="mod_mapa">css/mod_mapa.css</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Sufijo de tabla" description="fieldMODULECLASSSUFFIX" />
+				<field name="id_contenedor" type="text" default="mapa" label="Id DIV contenedor" description="ID contenedor del mapa" />
+
+				<field name="muestra_titulo" type="list" default="1" label="Mostrar titulo" description="Muestra el titulo del modulo">
+				  <option value="1">Si</option>
+				  <option value="0">No</option>
+				</field>
+
+				<field name="latitud" type="text" default="20.6768943" label="Latitud" description="" />
+				<field name="longitud" type="text" default="-103.3914179" label="Longitud" description="" />
+				<field name="zoom" type="text" default="15" label="Zoom" />
+
+				<field name="ancho" type="text" default="100%" label="Ancho" description="" />
+				<field name="alto" type="text" default="300px" label="Alto" description="" />
+
+				<field name="iframe" type="textarea" cols="40" label="Iframe" description="Iframe de Google MAP" />
+
+				<field name="muestra_marker" type="list" default="1" label="Mostrar Marker" description="Muestra un marcador en el mapa">
+				  <option value="1">Si</option>
+				  <option value="2">No</option>
+				</field>
+
+				<field name="titulo_marker" type="text" default="" label="Titulo del Marker" description="Titulo del Marcador" />
+
+				<field name="muestra_texto" type="list" default="1" label="Mostrar Caja de texto" description="Muestra un caja de texto sobre el marker">
+				  <option value="1">Si</option>
+				  <option value="2">No</option>
+				</field>
+
+				<field name="texto_caja" type="editor" filter="safehtml" label="Texto en caja" description="Texto a mostrar en la caja" />
+
+				<field name="agregar_script" type="list" default="1" label="Agregar Google Script" description="Agrega un script de Google Maps">
+				  <option value="1">Si</option>
+				  <option value="2">No</option>
+				</field>
+				
+				<field name="script_google" type="text" default="https://maps.googleapis.com/maps/api/js?v=3.exp" label="Url del Script"  />
+
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
